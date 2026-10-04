@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremenska prognoza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-card">
+        <!-- Sat i pretraga gradova-->
+       <header class="top-bar">
+        <div class="clock-box">
+            <h2 id="time">00:00:00</h2>
+            <p id="date">Učitavanje datuma...</p>
+        </div>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Unesite grad">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+       </header>
+       <!--Trenutno vrijeme-->
+       <main class="weather-main">
+        <div class="weather-info">
+            <h1 id="cityName">Mostar</h1>
+            <p id="weatherCondition">Sunčano</p>
+            <div class="temp-display">
+                <i class="fa-solid fa-sun"></i>
+                <span id="temperature">24</span><span id="unit"> ⁰C</span>
+            </div>
+        </div>
+        <!--Statistike-->
+        <div class="stats-grid">
+            <div class="stat-card">
+                   <i class="fa-solid fa-droplet"></i>
+                  <div>
+                    <p>Vlažnost</p>
+                    <h4 class="Humidity">45%</h4>
+                </div>
+            </div>
+              <div class="stat-card">
+                   <i class="fa-solid fa-wind"></i>
+                  <div>
+                    <p>Vjetar</p>
+                    <h4 class="Wind-speed">12 km/h</h4>
+                </div>
+            </div>
+              <div class="stat-card">
+                          <i class="fa-solid fa-gauge-high"></i>
+                  <div>
+                    <p>Pritisak</p>
+                    <h4 class="Pressure">1013 hPa</h4>
+                </div>
+            </div>
+        </div>
+       </main>
+       <!--Sedmicna prognoza-->
+       <section class="forecast-section">
+        <h3>Prognoza za naredne dane</h3>
+        <div class="forecast-grid" id="forecastContainer">    
+          <!--Potrebno implementirati js dio-->        
+        </div>
+       </section>
+    </div>
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
